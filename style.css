@@ -1,0 +1,334 @@
+/* === GENERAL STYLES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fdfdfd;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* === NAVBAR === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 15px 50px;
+  border: #000000 1px solid;
+ 
+ 
+/* navbar ngikut */
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Kanit";
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #494949;
+}
+
+/* === HERO === */
+.hero {
+  background-image: url(aset/setup.jpg);
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  background-color: #000000;
+  padding: 300px 20px;
+  font-family: kanit;
+  border: rgb(0, 0, 0) 1px solid;
+}
+.hero h2 {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.hero h1 {
+  font-size: 60px;
+  letter-spacing: 4px;
+  text-decoration: none solidrgb(243, 243, 243)1;
+  color: #ffffff;
+}
+
+.hero-img {
+  width: 500px;
+  margin-top: 20px;
+  border-radius: 20%;
+  transition: 0.4s;
+}
+
+
+
+/* === ABOUT === */
+.about {
+  background-image: url(aset/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding: 50px 10%;
+  text-align: center;
+  border: rgb(0, 0, 0) 1px solid;
+  
+}
+
+.about h2 {
+  background-color: #323232;
+  color: white;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.about-box {
+  border: 2px solid #000000;
+  padding: 50px; 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #3d3d3d;
+  box-shadow: 0 0 8px rgba(4, 4, 4, 0.1);
+  border-radius: 40px;
+  margin: 15%;
+  color: white;
+}
+
+.about-box p {
+  flex: 1;
+  text-align: justify;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.about-box img {
+  width: 300px;
+  border-radius: 30px;
+  transition: 0.3s;
+    
+}
+
+.about-box img:hover {
+  transform: scale(1.1);
+}
+
+/* === SKILLS === */
+.skill {
+  text-align: center;
+  padding: 400px 0;
+  background-color: #000000;
+  padding: 420px 20%;
+  background-image: url(/aset/bacground\ 2.jpg);
+  background-size: cover;
+  border: rgb(0, 0, 0) 1px solid;
+}
+
+.skill h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.skill-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.icon {
+  background: #000000;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: translateY(-8px);
+}
+
+.icon img {
+  width: 100px;
+}
+
+/* === PORTFOLIO === */
+.portfolio {
+  background-image: url(/aset/background4.jpg);
+  background-size: cover;
+  padding: 60px 10%;
+  text-align: center;
+  padding: 300px 20px;
+  background-color: black;
+  border: rgb(0, 0, 0) 1px solid;
+}
+
+.portfolio h2 {
+  
+  background-color: #212121;
+  color: rgb(255, 252, 252);
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  border: 2px solid #878787;
+  width: 300px;
+  background: #000000;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.3s;
+  max-height: 300px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  display: flex;
+}
+
+.project-card p {
+  background-color: #232323;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  height: 200px;
+}
+
+.input-btn {
+  background-color: #252525;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-btn:hover {
+  background-color: #000000;
+}
+
+/* === CONTACT === */
+.contact {
+  background-size: cover;
+  height: 100vh;
+  padding: 300px 10%;
+  text-align: center;
+  background: #000000;
+  border: rgb(0, 0, 0) 1px solid;
+  background-image: url(/aset/bacground\ 3.jpg);
+  background-size: cover;
+   
+}
+
+
+
+.contact h2 {
+  background-color: clear;
+  color: rgb(252, 252, 252);
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.contact-box {
+  text-align: center;
+  border: none;
+  width: 750px;
+  margin: 0 auto;
+  padding: 25px;
+  background: clear;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgba(244, 244, 244, 0.503);
+}
+
+.contact-box input,
+.contact-box textarea {
+  background-color: rgba(255, 255, 255, 0.167);
+  color: rgb(24, 22, 22);
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  resize: none;
+  
+}
+
+.contact-box button {
+  background-color: rgba(255, 255, 255, 0.141);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 8px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-box button:hover {
+  background-color: #000000;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 15px;
+  font-size: 14px;
+  ;
+}
+
+footer i {
+  margin-right: 6px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .about-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-box p {
+    margin-right: 0;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+}

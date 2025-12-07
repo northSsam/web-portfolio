@@ -13,16 +13,87 @@ body {
 }
 
 /* === NAVBAR === */
+/* Sembunyikan checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger Button */
+.hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #30303000;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #e2e2e2;
+    margin: 3px 0;
+}
+
+/* Menu */
+.menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background : blur(10px);
+    border: 1px solid #ddd;
+    width: 200px;
+    z-index: 999;
+}
+
+/* Tampilkan menu ketika checkbox dicentang */
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-item {
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-link {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #d2cdcd;
+}
+
+.menu-link:hover {
+    background: #000000;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f1f1f;
+  background-color: #181818;
   padding: 15px 50px;
-  border: #000000 1px solid;
+  border: #1e1e1e 1px solid;
+  position: fixed;
  
  
 /* navbar ngikut */
+display: flex;
   position: sticky; 
   top: 0;
   z-index: 1000;
@@ -41,6 +112,7 @@ nav a {
   margin-left: 20px;
   transition: 0.3s;
   font-weight: 500;
+  flex-direction: row;
 }
 
 nav a:hover {
@@ -91,7 +163,7 @@ nav a:hover {
 }
 
 .about h2 {
-  background-color: #323232;
+  background-color: #0202026d;
   color: white;
   display: inline-block;
   padding: 6px 14px;
@@ -109,8 +181,9 @@ nav a:hover {
   background: #3d3d3d;
   box-shadow: 0 0 8px rgba(4, 4, 4, 0.1);
   border-radius: 40px;
-  margin: 15%;
+  
   color: white;
+
 }
 
 .about-box p {
@@ -139,7 +212,10 @@ nav a:hover {
   padding: 420px 20%;
   background-image: url(/aset/bacground\ 2.jpg);
   background-size: cover;
+  background-position: center;
   border: rgb(0, 0, 0) 1px solid;
+
+  
 }
 
 .skill h2 {
@@ -267,7 +343,7 @@ nav a:hover {
 .contact-box {
   text-align: center;
   border: none;
-  width: 750px;
+  width: 500px;
   margin: 0 auto;
   padding: 25px;
   background: clear;
@@ -279,7 +355,7 @@ nav a:hover {
 
 .contact-box input,
 .contact-box textarea {
-  background-color: rgba(255, 255, 255, 0.167);
+  background-color: rgba(94, 90, 90, 0.167);
   color: rgb(24, 22, 22);
   border: none;
   border-radius: 5px;
@@ -317,18 +393,201 @@ footer {
 
 footer i {
   margin-right: 6px;
-}
+}  
 
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
+
+
+/* === MEDIA QUERIES === */
+
+/* Tablet  */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .hamburger{
+    margin-bottom: 200px;
+  }
+
+  .hero {
+    padding: 200px 20px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero-img {
+    width: 400px;
+  }
+
+  .about {
+    padding: 50px 5%;
+  }
+
   .about-box {
     flex-direction: column;
-    text-align: center;
+    margin: 5%;
+    padding: 30px;
   }
+
   .about-box p {
     margin-right: 0;
+    margin-bottom: 20px;
   }
-  .hero h1 {
-    font-size: 42px;
+
+  .about-box img {
+    width: 250px;
+  }
+
+  .skill {
+    padding: 300px 10%;
+  }
+
+  .skill-icons {
+    gap: 30px;
+  }
+
+  .icon img {
+    width: 90px;
+  }
+
+  .portfolio {
+    padding: 200px 10%;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .project-card {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .contact {
+    padding: 200px 5%;
+  }
+
+  .contact-box {
+    width: 80%;
+    max-width: 400px;
   }
 }
+
+/* HP */
+@media (min-width: 290px ) and (max-width: 767px) {
+  .navbar {
+    padding: 10px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger{
+    margin-bottom: 200px;
+    margin-top: -10px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .hero {
+    height: 80vh;
+    padding: 150px 20px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  .hero-img {
+    width: 300px;
+  }
+
+  .about {
+    height: auto;
+    padding: 50px 5%;
+  }
+
+  .about-box {
+    flex-direction: column;
+    margin: 5%;
+    padding: 20px;
+  }
+
+  .about-box p {
+    font-size: 14px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-box img {
+    width: 200px;
+  }
+
+  .skill {
+    padding: 200px 5%;
+  }
+
+  .skill-icons {
+    gap: 20px;
+  }
+
+  .icon img {
+    width: 80px;
+  }
+
+  .portfolio {
+    padding: 150px 5%;
+  }
+
+  .project-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .contact {
+    height: auto;
+    padding: 150px 5%;
+  }
+
+  .contact-box {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+
+
+
+

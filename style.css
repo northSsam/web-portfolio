@@ -55,7 +55,7 @@ body {
     z-index: 999;
 }
 
-/* Tampilkan menu ketika checkbox dicentang */
+/* Tampilkan menu */
 #menu-toggle:checked ~ .menu {
     display: block;
 }
@@ -366,7 +366,7 @@ nav a:hover {
 
 .contact-box button {
   background-color: rgba(255, 255, 255, 0.141);
-  color: rgb(0, 0, 0);
+  color: rgb(143, 143, 143);
   border: none;
   padding: 8px 0;
   border-radius: 5px;
@@ -375,7 +375,7 @@ nav a:hover {
 }
 
 .contact-box button:hover {
-  background-color: #000000;
+  background-color: #494848;
 }
 
 /* === FOOTER === */
@@ -388,11 +388,13 @@ footer {
   gap: 25px;
   padding: 15px;
   font-size: 14px;
+  text-decoration: none
   ;
 }
 
 footer i {
   margin-right: 6px;
+  text-decoration: none;
 }  
 
 

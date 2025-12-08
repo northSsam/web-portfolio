@@ -290,8 +290,8 @@ nav a:hover {
 
 .contact-box input,
 .contact-box textarea {
-  background-color: rgba(94, 90, 90, 0.167);
-  color: rgb(255, 255, 255);
+  background-color: rgba(41, 41, 41, 0.522);
+  color: white;
   border: none;
   border-radius: 5px;
   padding: 8px;
@@ -301,7 +301,7 @@ nav a:hover {
 
 .contact-box button {
   background-color: rgba(255, 255, 255, 0.141);
-  color: rgb(143, 143, 143);
+  color: white;
   border: none;
   padding: 8px 0;
   border-radius: 5px;
@@ -331,6 +331,10 @@ footer i {
   margin-right: 6px;
   text-decoration: none;
 }  
+footer a {
+  color: rgb(206, 206, 206);
+  text-decoration: none;
+}
 
 
 

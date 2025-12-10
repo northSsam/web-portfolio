@@ -133,7 +133,7 @@ nav a:hover {
 
 .about-box img {
   width: 500px;
-  border-radius: 30px;
+  border-radius: 35px;
   transition: 0.3s;
     
 }
@@ -142,12 +142,19 @@ nav a:hover {
   transform: scale(1.1);
 }
 
+.button{
+  display: block;
+  margin-top: 100px;
+}
+  
+
+
 /* === SKILLS === */
 .skill {
   text-align: center;
-  padding: 300px 0;
+  padding: 350px 20px;
   background-color: #000000;
-  padding: 420px 20%;
+  padding: 40 0px 20%;
   background-image: url(/aset/bacground\ 2.jpg);
   background-size: cover;
   background-position: center;
@@ -175,14 +182,13 @@ nav a:hover {
   background: #000000;
   padding: 15px;
   border-radius: 30px;
-  box-shadow: 0 0 15px rgba(248, 248, 248, 0.6);
+  box-shadow: 0 0 17px white;
   transition: transform 0.3s;
 }
 
 .icon:hover {
   transform: translateY(-8px);
-  
-}
+ }
 
 .icon img {
   width: 100px;
@@ -194,7 +200,7 @@ nav a:hover {
   background-size: cover;
   padding: 60px 10%;
   text-align: center;
-  padding: 300px 20px;
+  padding: 250px 20px;
   background-color: black;
   border: rgb(0, 0, 0) 1px solid;
 }
@@ -306,10 +312,10 @@ nav a:hover {
 
 .contact-box input,
 .contact-box textarea {
-  background-color: rgba(41, 41, 41, 0.522);
+  background-color: rgba(41, 41, 41, 0.593); /* warna box input */
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 8px;
   resize: none;
 }
